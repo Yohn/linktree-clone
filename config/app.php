@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Im On Pogo'),
 
     /*
     |--------------------------------------------------------------------------
@@ -120,7 +120,7 @@ return [
     */
 
     'key' => env('APP_KEY'),
-
+    // JB tried changing and got errors that this and AES-256-CBC are the only supported formats
     'cipher' => 'AES-256-CBC',
 
     /*

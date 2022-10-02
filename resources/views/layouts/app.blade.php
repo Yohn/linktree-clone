@@ -63,7 +63,7 @@
                                     <a href="/dashboard/links" class="dropdown-item">Edit Links</a>
                                     <a href="/dashboard/settings" class="dropdown-item">Settings</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                                    document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 

@@ -18,7 +18,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.1/dist/darkly/bootstrap.min.css" integrity="sha256-7mvDKMLoBU3B5Sj1sW2i33B9hPz1VSE9whs1QDJj01I=" crossorigin="anonymous">
     </head>
 
     <body style="background-color:{{ $user->background_color }}">

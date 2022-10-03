@@ -13,17 +13,18 @@
 		<!-- Scripts -->
 		<script src="{{ asset('js/app.js') }}" defer></script>
 
-		<!-- Fonts -->
+		<!-- Fonts
 		<link rel="dns-prefetch" href="//fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">-->
 
-		<!-- Styles -->
-		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+		<!-- Styles
+		<link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.1/dist/darkly/bootstrap.min.css" integrity="sha256-7mvDKMLoBU3B5Sj1sW2i33B9hPz1VSE9whs1QDJj01I=" crossorigin="anonymous">
 	</head>
 
 	<body>
 		<div id="app">
-			<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+			<nav class="navbar navbar-expand-md navbar-dark bg-primary shadow-sm">
 				<div class="container">
 					<a class="navbar-brand" href="{{ url('/') }}">
 						{{ config('app.name', 'Laravel') }}
@@ -60,8 +61,11 @@
 								</a>
 
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+									<a href="/{{ Auth::user()->username }}" class="dropdown-item">My Page</a>
+									<hr class="dropdown-divider">
 									<a href="/dashboard/links" class="dropdown-item">Edit Links</a>
 									<a href="/dashboard/settings" class="dropdown-item">Profile Settings</a>
+									<hr class="dropdown-divider">
 									<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
 													document.getElementById('logout-form').submit();">
 										{{ __('Logout') }}

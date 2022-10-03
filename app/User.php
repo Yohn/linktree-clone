@@ -19,7 +19,12 @@ class User extends Authenticatable
         'email',
         'password',
         'background_color',
-        'text_color'
+        'text_color',
+				'profile_pic',
+				'first_name',
+				'last_name',
+				'pronouns',
+				'about_notes'
     ];
 
     /**
@@ -43,7 +48,7 @@ class User extends Authenticatable
 
     /**
      * Get all the visits for a user
-     * 
+     *
      * @return Relationship
      */
     public function visits()
